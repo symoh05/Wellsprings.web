@@ -1,0 +1,548 @@
+`/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e1;
+    color: #e0eedd;
+    background-image: url(img/v3.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    
+}
+
+h1, h2 {
+    color: #0a0a0a; /* Dark Blue */
+}
+
+/* Header */
+header {
+    background-color: none;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #b1ae00; /* Light Green */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-overlay.active {
+    display: block;
+}
+
+.main-nav {
+    display: flex;
+
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+   
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+/* Responsive for Hamburger Menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #004D7A;
+        width: 250px;
+        height: 100%;
+        padding-top: 60px;
+        z-index: 9999;
+        box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin-bottom: 20px;
+    }
+
+    .main-nav.active {
+        display: block;
+    }
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #ffc72c;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-preview, .courses-preview, .news {
+    margin-top: 30px;
+}
+
+section h2 {
+    color: #004D7A;
+}
+
+section a {
+    color: #00B141; /* Light Green */
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contact Form */
+form {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #004D7A; /* Dark Blue */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #00B141; /* Light Green */
+}
+/* Add this to your styles.css */
+.apply-now-button {
+    display: inline-block;
+    background-color: #28a745; /* Green button */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.apply-now-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.img-a2 {
+    height: 400px;
+    position: relative;
+    width: 600px;
+    height: relative;  /* positioning */
+    border-radius: 10px;  /* Curves the edges */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /*Adds shadow*/
+    align-items: center;
+    
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: rgb(252, 251, 251);
+    position: relative;
+  
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    color: white;
+   
+   
+}
+
+content .cn{
+    width: 160px;
+    height: 40px;
+    background: orange;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: white;
+}
+
+.content span{
+    color: orange;
+    font-size: 60px;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.main{
+    width: 100vw;
+    background-image: url(img/campus.web);
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    background-image: url(img/v3.avif);
+}
+
+.navigation{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: orange;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    cursor: pointer;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: orange;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: rgb(252, 251, 251);
+    position: relative;
+  
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+   
+   
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: orange;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: white;
+}
+
+.content span{
+    color: orange;
+    font-size: 60px;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top,black,black);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: orange;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid orange;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: white;
+}
+
+::placeholder{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: orange;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transform: 0.4s ease;
+}
+
+.btnn a{
+    text-decoration: none;
+    columns: black;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Fees Table */
+.fees-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: left;
+    background-color: #cccccc80;
+    margin-top: 200px;
+    color: #004D7A;
+    
+}
+
+.fees-table th, .fees-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.fees-table th {
+    background-color: #f39c12;
+    color:solid white;
+}
+
+.fees-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+nav ul li {
+    margin: 15px 20px;
+}
+
+nav ul li a {
+    color: 333;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
